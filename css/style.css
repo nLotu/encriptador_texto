@@ -36,7 +36,7 @@
 .txt_entrada {
 	position: absolute;
 	width: 577px;
-	height: 48px;
+	height: 600px;
 	left: 240px;
 	top: 168px;
 	font-family: 'Inter', sans-serif;
@@ -49,6 +49,10 @@
 	border: none;
 	resize: none;
 	overflow: hidden;
+}
+
+.txt_entrada::placeholder {
+	color: #0A3871;
 }
 
 .txt_entrada:focus {
