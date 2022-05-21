@@ -61,7 +61,7 @@ function ocultarAlerta(alerta) {
 	alerta.classList.add("invisible");
 }
 
-function encriptar(letra) {
+function encriptarLetra(letra) {
 	var vocales = ["a","e","i","o","u"];
 	var clave = ["ai","enter","imes","ober","ufat"];
 	for(var i = 0; i < vocales.length; i++) {
@@ -74,9 +74,8 @@ function encriptar(letra) {
 
 function encriptarTexto(texto) {
 	var textoEncriptado ="";
-	console.log(textoEncriptado);
 	for(var i = 0; i < texto.length; i++){
-		letra = encriptar(texto[i]);
+		letra = encriptarLetra(texto[i]);
 		textoEncriptado = textoEncriptado + letra;
 	}
 	return textoEncriptado;
