@@ -48,6 +48,7 @@
 	background: none;
 	border: none;
 	resize: none;
+	overflow: hidden;
 }
 
 .txt_entrada:focus {
