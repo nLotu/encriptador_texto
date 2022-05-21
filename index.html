@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8">
+		<title>Encriptador de texto</title>
+		<link rel="stylesheet" href="css/reset.css">
+		<link rel="stylesheet" href="css/style.css">
+		<!--Fuente-->
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet">
+	</head>
+
+	<body class="contenedor">
+
+		<header class="logo">
+			<h1><img src="img/logo@2x.png" class="img_logo"></h1>
+		</header>
+
+		<main class="principal">
+			<section class="entrada_encriptador">
+				<textarea class="txt_entrada">Ingrese el texto aqui</textarea>
+				<div class="msj_alerta">
+					<img src="img/icono_alerta.png" class="icono_alerta">
+					<p class="txt_alerta">Solo letras minúsculas y sin acentos</p>
+				</div>
+				<div class="botones_encriptador">
+					<button class="btn_encriptar">Encriptar</button>
+					<button class="btn_desencriptar">Desencriptar</button>
+				</div>
+			</section>
+
+			<section class="salida_encriptador">
+			
+				<div id="con_salida" class="invisible">
+					<p class="txt_salida"></p>
+					<button class="btn_copiar_salida">Copiar</button>
+				</div>
+				
+				<div id="sin_salida">
+					<img src="img/munheco.png" class="munheco">
+					<fieldset class="contenedor_txt_sin_salida">
+						<h3 class="titulo_sin_salida">Ningún mensaje fue encontrado</h3>
+						<p class="txt_sin_salida">Ingresa el texto que desees encriptar o desencriptar.</p>
+					</fieldset>
+				</div>
+
+			</section>
+		
+		</main>
+
+		<footer class="pie_de_pag">
+			Desarrollado por Nelson Lotumolo
+		</footer>
+		
+
+	</body>
+
+</html>
