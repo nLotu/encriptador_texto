@@ -1,6 +1,6 @@
-var btn_encriptar = document.querySelector(".btn_encriptar");
+var btnEncriptar = document.querySelector(".btn_encriptar");
 
-btn_encriptar.addEventListener("click", function() {
+btnEncriptar.addEventListener("click", function() {
 	var textArea = document.querySelector(".txt_entrada");
 	var texto = textArea.value;
 	if(texto.length > 0) {
