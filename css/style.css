@@ -3,7 +3,6 @@
 }
 
 .contenedor {
-	position: relative;
 	width: 1440px;
 	height: auto;
 	margin: 0 auto;
@@ -15,7 +14,6 @@
 .logo {
 	height: auto;
 	margin: 40px 0 40px 84px;
-	padding: 0px;
 }
 
 .img_logo {
@@ -197,4 +195,50 @@
 
 .invisible {
 	display: none;
+}
+
+@media screen and (max-width:980px) {
+
+	.contenedor {
+		width: 768px;
+	}
+
+	.logo {
+		height: auto;
+		margin: 75px 0 40px 0px;
+	}
+
+	.img_logo {
+		width: 120px;
+	}
+
+	.principal {
+		height: auto;
+		margin: 0 40px 20px 40px;
+		display: flex;
+		flex-direction: column;
+		gap: 65px;
+	}
+
+	.salida_encriptador {
+		width: 688px;
+	}
+
+	.munheco {
+		display: none;
+	}
+
+	.contenedor_txt_sin_salida {
+		width: 624px;
+		margin: 32px;
+	}
+
+	.titulo_sin_salida, .txt_sin_salida {
+		width: 624px;
+	}
+
+	.contenedor_salida, .txt_salida, .btn_copiar_salida  {
+		width: 624px;
+	}
+
 }
