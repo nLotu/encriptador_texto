@@ -14,6 +14,7 @@ btnDesencriptar.addEventListener("click", function() {
 			var textoSalida = document.querySelector(".txt_salida");
 			sinSalida.classList.add("invisible");
 			conSalida.classList.remove("invisible");
+			conSalida.classList.add("contenedor_salida");
 			textArea.value = "";
 			var textoDesencriptado = desencriptarTexto(texto);
 			textoSalida.textContent = textoDesencriptado;
@@ -32,6 +33,8 @@ function desencriptarTexto(texto) {
 				if(clave == "ai") {
 					textoDesencriptado = textoDesencriptado + "a";
 					i=i+1;
+				} else {
+					esClave = false;
 				}
 				break;
 			case 'e':
@@ -39,13 +42,18 @@ function desencriptarTexto(texto) {
 				if(clave == "enter") {
 					textoDesencriptado = textoDesencriptado + "e";
 					i=i+4;
+				}else {
+					esClave = false;
 				}
+
 				break;
 			case 'i':
 				var clave = texto[i] + texto[i+1] + texto[i+2] + texto[i+3];
 				if(clave == "imes") {
 					textoDesencriptado = textoDesencriptado + "i";
 					i=i+3;
+				}else {
+					esClave = false;
 				}
 				break;
 			case 'o':
@@ -53,6 +61,8 @@ function desencriptarTexto(texto) {
 				if(clave == "ober") {
 					textoDesencriptado = textoDesencriptado + "o";
 					i=i+3;
+				}else {
+					esClave = false;
 				}
 				break;
 			case 'u':
@@ -60,6 +70,8 @@ function desencriptarTexto(texto) {
 				if(clave == "ufat") {
 					textoDesencriptado = textoDesencriptado + "u";
 					i=i+3;
+				}else {
+					esClave = false;
 				}
 				break;
 			default:

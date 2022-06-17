@@ -12,6 +12,7 @@ btnEncriptar.addEventListener("click", function() {
 			var textoSalida = document.querySelector(".txt_salida");
 			sinSalida.classList.add("invisible");
 			conSalida.classList.remove("invisible");
+			conSalida.classList.add("contenedor_salida");
 			textArea.value = "";
 			var textoEncriptado = encriptarTexto(texto);
 			textoSalida.textContent = textoEncriptado;
