@@ -4,22 +4,18 @@ btnEncriptar.addEventListener("click", function() {
 	var textArea = document.querySelector(".txt_entrada");
 	var texto = textArea.value;
 	if(texto.length > 0) {
-		var alerta = document.querySelector("#alerta");
-
 		if(!validarTexto(texto)){
-			mostrarAlerta(alerta);
+			alert("El texto ingresado no es valido. No se permiten mayusculas, acentos y caracteres especiales");
 		} else {
-			var sinSalida = document.querySelector("#sin_salida");			
+			var sinSalida = document.querySelector("#sin_salida");
 			var conSalida = document.querySelector("#con_salida");
 			var textoSalida = document.querySelector(".txt_salida");
-			ocultarAlerta(alerta);
 			sinSalida.classList.add("invisible");
 			conSalida.classList.remove("invisible");
 			textArea.value = "";
 			var textoEncriptado = encriptarTexto(texto);
 			textoSalida.textContent = textoEncriptado;
 		}
-
 	}
 });
 
@@ -49,16 +45,6 @@ function caracterValido(letra) {
 		}
 	}
 	return esValido;
-}
-
-function mostrarAlerta(alerta) {
-	alerta.classList.remove("invisible");
-	alerta.classList.add("msj_alerta");
-}
-
-function ocultarAlerta(alerta) {
-	alerta.classList.remove("msj_alerta");
-	alerta.classList.add("invisible");
 }
 
 function encriptarLetra(letra) {

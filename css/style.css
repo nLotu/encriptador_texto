@@ -198,7 +198,7 @@
 .txt_salida {
 	position: absolute;
 	width: 336px;
-	height: 781px;
+	height: auto;
 	left: 32px;
 	top: 32px;
 	font-weight: 400;

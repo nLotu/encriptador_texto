@@ -7,12 +7,11 @@ btnDesencriptar.addEventListener("click", function() {
 	if(texto.length > 0) {
 		var alerta = document.querySelector("#alerta");
 		if(!validarTexto(texto)){
-			mostrarAlerta(alerta);
+			alert("El texto ingresado no es valido. No se permiten mayusculas, acentos y caracteres especiales");
 		} else {
 			var sinSalida = document.querySelector("#sin_salida");			
 			var conSalida = document.querySelector("#con_salida");
 			var textoSalida = document.querySelector(".txt_salida");
-			ocultarAlerta(alerta);
 			sinSalida.classList.add("invisible");
 			conSalida.classList.remove("invisible");
 			textArea.value = "";
